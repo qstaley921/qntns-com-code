@@ -1,0 +1,19 @@
+@use '../styles/variables' as *;
+
+body {
+  margin: 0;
+  padding: 0; 
+  background: $clr-bg; // Use the background color variable
+}
+
+// Type Tag 
+h1 {
+  font-family: $font-main;
+  font-size: $size-h1;
+  color: $clr-primary;
+}
+
+.center {
+  @extend h1;
+  text-align: center;
+}

@@ -1,0 +1,42 @@
+// Colors
+$clr-bg: #d9cdbf;
+$clr-primary: #102853;
+$clr-black: #000000;
+$clr-white: #ffffff;
+
+// Fonts & Sizes
+$font-main: "Josefin Sans", Arial, Helvetica, sans-serif;
+$size-stext: 0.75rem;    // 12px - Small text
+$size-text: 0.875rem;    // 14px - Text
+$size-body: 1rem;        // 16px - Body (base)
+$size-subtitle: 1.25rem; // 20px - Subtitle
+$size-h3: 1.5rem;        // 24px - H3
+$size-h2: 1.875rem;      // 30px - H2
+$size-h1: 2.25rem;       // 36px - H1
+$size-title: 3rem;       // 48px - Title/Hero
+
+// Breakpoints
+$mobile: 600px;
+$tablet: 768px;
+$desktop: 1024px;
+
+ 
+
+// Mixins for media queries
+@mixin mobile {
+  @media (max-width: $mobile) {
+    @content;
+  }
+}
+
+@mixin tablet-up {
+  @media (min-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin desktop-up {
+  @media (min-width: $desktop) {
+    @content;
+  }
+}
